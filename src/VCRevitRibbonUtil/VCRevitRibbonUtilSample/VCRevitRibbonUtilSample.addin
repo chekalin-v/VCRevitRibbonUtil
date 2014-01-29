@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>Application VCRevitRibbonUtilSample</Name>
+    <Assembly>VCRevitRibbonUtilSample.dll</Assembly>
+    <FullClassName>VCRevitRibbonUtilSample.App</FullClassName>
+    <ClientId>4373e630-457f-4a58-85b2-ca0a3d86febf</ClientId>
+    <VendorId>VC</VendorId>
+    <VendorDescription>Victor Chekalin</VendorDescription>
+  </AddIn>
+</RevitAddIns>
