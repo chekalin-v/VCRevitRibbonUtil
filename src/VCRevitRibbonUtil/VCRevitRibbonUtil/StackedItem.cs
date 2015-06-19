@@ -14,7 +14,7 @@ using Autodesk.Revit.UI;
 
 namespace VCRevitRibbonUtil
 {
-    public class StackedItem
+    public class StackedItem : VCRibbonItem
     {
         private readonly Panel _panel;
         private readonly IList<Button> _buttons;

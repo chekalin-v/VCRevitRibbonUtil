@@ -16,14 +16,14 @@ using VCRevitRibbonUtil.Helpers;
 
 namespace VCRevitRibbonUtil
 {
-    public class Button
+    public class Button : VCRibbonItem
     {
-        private readonly string _name;
-        private readonly string _text;
+        protected readonly string _name;
+        protected readonly string _text;
         private readonly string _className;
-        private ImageSource _largeImage;
-        private ImageSource _smallImage;
-        private string _description;
+        protected ImageSource _largeImage;
+        protected ImageSource _smallImage;
+        protected string _description;
         private string _assemblyLocation;
 
         public Button(string name, 
@@ -32,9 +32,13 @@ namespace VCRevitRibbonUtil
         {
             _name = name;
             _text = text;
-            _className = externalCommandType.FullName;
-            _assemblyLocation =
-                externalCommandType.Assembly.Location;
+
+            if (externalCommandType != null)
+            {
+                _className = externalCommandType.FullName;
+                _assemblyLocation =
+                    externalCommandType.Assembly.Location;
+            }
         }
        
 
@@ -62,7 +66,7 @@ namespace VCRevitRibbonUtil
             return this;
         }
 
-        internal PushButtonData Finish()
+        internal virtual ButtonData Finish()
         {
            PushButtonData pushButtonData = 
                 new PushButtonData(_name,

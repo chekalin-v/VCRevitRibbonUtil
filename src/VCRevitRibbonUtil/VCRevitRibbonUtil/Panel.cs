@@ -13,7 +13,7 @@ using Autodesk.Revit.UI;
 
 namespace VCRevitRibbonUtil
 {
-    public class Panel
+    public class Panel : VCRibbonItem
     {
         private readonly Tab _tab;
         private readonly RibbonPanel _panel;
@@ -142,6 +142,31 @@ namespace VCRevitRibbonUtil
 
             return this;
         }
+
+        public Panel CreatePullDownButton(string name,
+                                  string text,                                  
+                                  Action<PulldownButton> action)
+        {
+            PulldownButton button = new PulldownButton(name,
+                text);
+
+            if (action != null)
+            {
+                action.Invoke(button);
+            }
+
+            var buttonData = button.Finish();
+
+            var ribbonItem = _panel.AddItem(buttonData) as Autodesk.Revit.UI.PulldownButton;
+
+            button.BuildButtons(ribbonItem);
+
+            button.RibbonItem = ribbonItem;
+
+            return this;
+        }
+
+        //--
 
         /// <summary>
         /// Create separator on the panel
