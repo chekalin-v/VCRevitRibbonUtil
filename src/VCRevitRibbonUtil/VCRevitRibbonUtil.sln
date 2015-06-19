@@ -1,24 +1,36 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VCRevitRibbonUtil", "VCRevitRibbonUtil\VCRevitRibbonUtil.csproj", "{6F3ACF2D-4068-4210-BBBC-55AF23EAAD69}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VCRevitRibbonUtilSample", "VCRevitRibbonUtilSample\VCRevitRibbonUtilSample.csproj", "{F09FBF0A-0290-4400-91BC-58F0A72F800A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
+		Debug 2014|Any CPU = Debug 2014|Any CPU
+		Debug 2015|Any CPU = Debug 2015|Any CPU
+		Release 2014|Any CPU = Release 2014|Any CPU
+		Release 2015|Any CPU = Release 2015|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6F3ACF2D-4068-4210-BBBC-55AF23EAAD69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6F3ACF2D-4068-4210-BBBC-55AF23EAAD69}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6F3ACF2D-4068-4210-BBBC-55AF23EAAD69}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6F3ACF2D-4068-4210-BBBC-55AF23EAAD69}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F09FBF0A-0290-4400-91BC-58F0A72F800A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F09FBF0A-0290-4400-91BC-58F0A72F800A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F09FBF0A-0290-4400-91BC-58F0A72F800A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F09FBF0A-0290-4400-91BC-58F0A72F800A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F3ACF2D-4068-4210-BBBC-55AF23EAAD69}.Debug 2014|Any CPU.ActiveCfg = Debug 2014|Any CPU
+		{6F3ACF2D-4068-4210-BBBC-55AF23EAAD69}.Debug 2014|Any CPU.Build.0 = Debug 2014|Any CPU
+		{6F3ACF2D-4068-4210-BBBC-55AF23EAAD69}.Debug 2015|Any CPU.ActiveCfg = Debug 2015|Any CPU
+		{6F3ACF2D-4068-4210-BBBC-55AF23EAAD69}.Debug 2015|Any CPU.Build.0 = Debug 2015|Any CPU
+		{6F3ACF2D-4068-4210-BBBC-55AF23EAAD69}.Release 2014|Any CPU.ActiveCfg = Release 2014|Any CPU
+		{6F3ACF2D-4068-4210-BBBC-55AF23EAAD69}.Release 2014|Any CPU.Build.0 = Release 2014|Any CPU
+		{6F3ACF2D-4068-4210-BBBC-55AF23EAAD69}.Release 2015|Any CPU.ActiveCfg = Release 2015|Any CPU
+		{6F3ACF2D-4068-4210-BBBC-55AF23EAAD69}.Release 2015|Any CPU.Build.0 = Release 2015|Any CPU
+		{F09FBF0A-0290-4400-91BC-58F0A72F800A}.Debug 2014|Any CPU.ActiveCfg = Debug 2014|Any CPU
+		{F09FBF0A-0290-4400-91BC-58F0A72F800A}.Debug 2014|Any CPU.Build.0 = Debug 2014|Any CPU
+		{F09FBF0A-0290-4400-91BC-58F0A72F800A}.Debug 2015|Any CPU.ActiveCfg = Debug 2015|Any CPU
+		{F09FBF0A-0290-4400-91BC-58F0A72F800A}.Debug 2015|Any CPU.Build.0 = Debug 2015|Any CPU
+		{F09FBF0A-0290-4400-91BC-58F0A72F800A}.Release 2014|Any CPU.ActiveCfg = Release 2014|Any CPU
+		{F09FBF0A-0290-4400-91BC-58F0A72F800A}.Release 2014|Any CPU.Build.0 = Release 2014|Any CPU
+		{F09FBF0A-0290-4400-91BC-58F0A72F800A}.Release 2015|Any CPU.ActiveCfg = Release 2015|Any CPU
+		{F09FBF0A-0290-4400-91BC-58F0A72F800A}.Release 2015|Any CPU.Build.0 = Release 2015|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
