@@ -26,6 +26,8 @@ namespace VCRevitRibbonUtil
         protected string _description;
         private string _assemblyLocation;
 
+        protected ContextualHelp _contextualHelp;
+
         public Button(string name, 
                       string text, 
                       Type externalCommandType)
@@ -89,6 +91,11 @@ namespace VCRevitRibbonUtil
                 pushButtonData.LongDescription = _description;
             }
 
+            if (_contextualHelp!=null)
+            {
+                pushButtonData.SetContextualHelp(_contextualHelp);
+            }
+
             //_panel.Source.AddItem(pushButtonData);
 
             return pushButtonData;
@@ -97,6 +104,20 @@ namespace VCRevitRibbonUtil
         public Button SetLongDescription(string description)
         {
             _description = description;
+
+            return this;
+        }
+
+        public Button SetContextualHelp(ContextualHelpType contextualHelpType, string helpPath)
+        {
+            _contextualHelp = new ContextualHelp(contextualHelpType, helpPath);
+            
+            return this;
+        }
+
+        public Button SetHelpUrl(string url)
+        {
+            _contextualHelp = new ContextualHelp(ContextualHelpType.Url, url);
 
             return this;
         }

@@ -37,6 +37,11 @@ namespace VCRevitRibbonUtil
                 pulldownButtonData.LongDescription = _description;
             }
 
+            if (_contextualHelp != null)
+            {
+                pulldownButtonData.SetContextualHelp(_contextualHelp);
+            }
+
             //pulldownButtonData.
 
             //_panel.Source.AddItem(pushButtonData);

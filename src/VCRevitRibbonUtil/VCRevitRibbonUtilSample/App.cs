@@ -35,7 +35,9 @@ namespace VCRevitRibbonUtilSample
                         .SetLargeImage(Resources
                             ._1348119708_face_monkey_32)
                         .SetSmallImage(Resources
-                            ._1348119708_face_monkey_16))
+                            ._1348119708_face_monkey_16)
+                        .SetContextualHelp(ContextualHelpType.Url, "http://adn-cis.org"))
+
 
                 .CreateSeparator()
 
@@ -90,7 +92,9 @@ namespace VCRevitRibbonUtilSample
                             .CreateButton<Command1>("btn1_1", "Button1",
                                 btn => btn
                                     .SetSmallImage(Resources._1348119553_face_smile_big_16)
-                                    .SetLargeImage(Resources._1348119568_face_smile_big_32));
+                                    .SetLargeImage(Resources._1348119568_face_smile_big_32)
+                                    .SetContextualHelp(ContextualHelpType.Url, "http://adn-cis.org"))
+                        .SetHelpUrl("http://adn-cis.org/forum");
 
 
                     });
